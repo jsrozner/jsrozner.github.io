@@ -2,6 +2,9 @@
   text-align: center
 }
 
+/*
+For about.html (main page)
+*/
 #about-header-container {
   @extend .center;
 
@@ -13,7 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0px;
-  height: 300px;
+  height: 278px;
   width: auto;
 }
 
@@ -21,22 +24,62 @@
   color: #fdfdfd;
 }
 
+#about-header-container h1 {
+  font-size: 45px;
+  font-family: Roboto;
+}
+
+.intro-text {
+  @extend .center;
+  font-family: Roboto;
+  width: 80%;
+  padding: 50px;
+}
+/*
+Shared items for navbar, etc.
+*/
 #navbar {
   @extend .center;
   margin-top: 14px;
+}
+
+#site-title {
+  @extend .center;
+  margin-top: 14px;
+}
+
+.site-header #navbar {
+  float: right;
+  display: inline-block;
+}
+
+.site-header #site-title {
+  float: left;
+  display: inline-block;
 }
 
 .navbutton {
   padding: 15px;
   text-transform: uppercase;
   font-family: 'Roboto Condensed';
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  &:active {
-    text-decoration: none;
-  }
 }
 
+.social img {
+  height: 45px;
+  padding-left: 2px;
+  padding-right: 2px;
+  -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  filter: grayscale(90%);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+}

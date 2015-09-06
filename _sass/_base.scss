@@ -98,7 +98,11 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
     }
 }
 
