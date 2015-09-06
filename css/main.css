@@ -1,17 +1,20 @@
 /*
-Error: Invalid CSS after "@charset "UTF-8"": expected "{", was ";"
-        on line 2 of main.scss
+Error: Invalid CSS after "@charset "utf-8"": expected "{", was ";"
+        on line 5 of main.scss
 
 1: ---
-2: @charset "UTF-8";
-3: 
-4: // Our variables
-5: $base-font-family: Roboto, Arial, sans-serif;
-6: $base-font-size:   16px;
-7: $small-font-size:  $base-font-size * 0.875;
+2: # comment
+3: ---
+4: 
+5: @charset "utf-8";
+6: 
+7: // Our variables
+8: $base-font-family: Roboto, Arial, sans-serif;
+9: $base-font-size:   16px;
+10: $small-font-size:  $base-font-size * 0.875;
 
 Backtrace:
-main.scss:2
+main.scss:5
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1098:in `expected'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1093:in `tok!'
@@ -40,4 +43,4 @@ main.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@charset \"UTF-8\"\": expected \"{\", was \";\"\A         on line 2 of main.scss\A \A 1: ---\A 2: @charset \"UTF-8\";\A 3: \A 4: // Our variables\A 5: $base-font-family: Roboto, Arial, sans-serif;\A 6: $base-font-size:   16px;\A 7: $small-font-size:  $base-font-size * 0.875;"; }
+  content: "Error: Invalid CSS after \"@charset \"utf-8\"\": expected \"{\", was \";\"\A         on line 5 of main.scss\A \A 1: ---\A 2: # comment\A 3: ---\A 4: \A 5: @charset \"utf-8\";\A 6: \A 7: // Our variables\A 8: $base-font-family: Roboto, Arial, sans-serif;\A 9: $base-font-size:   16px;\A 10: $small-font-size:  $base-font-size * 0.875;"; }
