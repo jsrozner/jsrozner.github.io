@@ -1,14 +1,16 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Josh Rozner
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Josh Rozner's personal website.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jsrozner
+github_url: "https://github.com/jsrozner"
+facebook_username: jsrozner
+facebook_url: "https://www.facebook.com/jsrozner"
+linkedin_username: jsrozner
+linkedin_url: "https://www.linkedin.com/in/jsrozner"
+
 
 # Build settings
 markdown: kramdown

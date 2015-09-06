@@ -1,23 +1,19 @@
 ---
-layout: default
+title: About
+permalink: /about/
 ---
 
-<div class="home">
+{% include head.html %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id="about-header-container">
+    <div id="about-header">
+      <h1> Josh Rozner </h1>
+      <span class="social">
+        <a href={{ site.github_url }}> <img src="/img/social/github@2x.png"> </a>
+        <a href={{ site.facebook_url }}> <img src="/img/social/facebook@2x.png"> </a>
+        <a href={{ site.linkedin_url }}> <img src="/img/social/linked.png"> </a>
+      </span>
+    </div>
 </div>
+
+{% include navbar.html %}

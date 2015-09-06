@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -141,6 +141,24 @@ pre {
   vertical-align: middle; }
   .icon > svg path {
     fill: #828282; }
+
+.center, #about-header-container, #navbar {
+  text-align: center; }
+
+#about-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/img/space2.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  height: 300px;
+  width: auto; }
+
+#about-header {
+  color: #fdfdfd; }
 
 /**
  * Site header

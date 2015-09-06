@@ -1,0 +1,27 @@
+.center {
+  text-align: center
+}
+
+#about-header-container {
+  @extend .center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/img/space2.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  height: 300px;
+  width: auto;
+}
+
+#about-header {
+  color: #fdfdfd;
+}
+
+#navbar {
+  @extend .center;
+
+}
