@@ -5,6 +5,11 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta content="Contributions by Josh Rozner" itemprop="name" property="og:title">
+  <meta content="https://maps.google.com/maps/api/staticmap?sensor=false&amp;center=35.6590289%2C139.72177695&amp;zoom=15&amp;size=256x256&amp;language=en&amp;client=google-maps-frontend&amp;signature=zCdi57KDUnJElvm8sZfHq_h2yg8" itemprop="image" property="og:image">
+  <meta content="Level 3 Local Guide." itemprop="description" property="og:description">
+  <meta content="summary" name="twitter:card">
+  
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
